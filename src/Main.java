@@ -71,11 +71,11 @@ public class Main {
         System.out.println("Задача 6");
         int salary = 15000;
         int total = 0;
-        double i = 0.5;
-        for (; total<=12_000_000 && i<=9; i = i +0.5){
+        int i = 1;
+        for (; total<=12_000_000 && i<=108; i++){
             total = total + salary + (salary*7/100);
-            if (i%0.5 == 0 ){
-                System.out.println("Год " + i + " Итого " + total);
+            if (i%6 == 0 ){
+                System.out.println("Месяц " + i + " Итого " + total);
             }
         }
     }
